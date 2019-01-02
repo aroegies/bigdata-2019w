@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Course homepage for CS 451/651 Data-Intensive Distributed Computing (Fall 2018) at the University of Waterloo">
-    <meta name="author" content="Jimmy Lin">
+    <meta name="description" content="Course homepage for CS 431/631 451/651 Data-Intensive Distributed Computing (Winter 2019) at the University of Waterloo">
+    <meta name="author" content="Adam Roegiest">
     <title>Data-Intensive Distributed Computing</title>
 
     <!-- Bootstrap core CSS -->
@@ -62,7 +62,7 @@
 
   <div class="page-header">
     <div style="float: right"><img width="250" src="images/waterloo_logo.png" alt="University of Waterloo logo"/></div>
-    <h1>Syllabus <br/><small>Data-Intensive Distributed Computing (Fall 2018)</small></h1>
+    <h1>Syllabus <br/><small>Data-Intensive Distributed Computing (Winter 2019)</small></h1>
   </div>
 
 <section id="schedule">
@@ -75,79 +75,91 @@
     <td><b>Part</b></td>
     <td><b>Description</b></td>
     <td><b>Dates</b></td>
-    <td><b>Assignments</b></td>
+    <td><b>CS 451/651 Assignments</b></td>
+    <td><b>CS 431/631 Assignments</b></td>
 </tr>
 </thead>
 <tbody>
-
   <tr>
     <td>1</td>
     <td><a href="#part01">MapReduce Algorithm Design</a></td>
-    <td>Sep 6, 11, 13, 18</td>
-    <td><a href="assignment0.html" class="btn btn-success btn-xs">A0 (Warmup): Sep 18</a></td>
+    <td>Jan 8, 10, 15, 17</td>
+    <td><a href="assignment0-451.html" class="btn btn-success btn-xs">A0: Jan 17</a></td>
+    <td></td>
   </tr>
 
   <tr>
     <td>2</td>
     <td><a href="#part02">From MapReduce to Spark</a></td>
-    <td>Sep 20, 25</td>
-    <td><a href="assignment1.html" class="btn btn-success btn-xs">A1 (Counting in MR): Sep 25</a></td>
+    <td>Jan 22, 24</td>
+    <td><a href="assignment1-451.html" class="btn btn-success btn-xs">A1: Jan 24</a></td>
+    <td><a href="assignment0-431.html" class="btn btn-info btn-xs">A0: Jan 22</a></td>
   </tr>
 
   <tr>
     <td>3</td>
     <td><a href="#part03">Analyzing Text</a></td>
-    <td>Sep 27, Oct 2</td>
-    <td><a href="assignment2.html" class="btn btn-success btn-xs">A2 (Counting in Spark): Oct 2</a></td>
+    <td>Jan 29, 31</td>
+    <td><a href="assignment2-451.html" class="btn btn-success btn-xs">A2: Jan 31</a></td>
+    <td><a href="assignment1-431.html" class="btn btn-info btn-xs">A1: Jan 29</a></td>
   </tr>
 
   <tr>
     <td>4</td>
     <td><a href="#part04">Analyzing Graphs</a></td>
-    <td>Oct 4, 11</td>
-    <td><a href="assignment3.html" class="btn btn-success btn-xs">A3 (Indexing): Oct 12</a></td>
+    <td>Feb 5, 7</td>
+    <td><a href="assignment3-451.html" class="btn btn-success btn-xs">A3: Feb 7</a></td>
+    <td><a href="assignment2-431.html" class="btn btn-info btn-xs">A2: Feb 7</a></td>
   </tr>
 
   <tr>
     <td>5</td>
     <td><a href="#part05">Analyzing Relational Data</a></td>
-    <td>Oct 16, 18, 23</td>
+    <td>Feb 12, 14, 26</td>
     <td></td>
+    <td><a href="assignment3-431.html" class="btn btn-info btn-xs">A3: Feb 14</a></td>
   </tr>
 
   <tr>
     <td>6</td>
     <td><a href="#part06">Data Mining and Machine Learning</a></td>
-    <td>Oct 25, 30, Nov 1, 6</td>
-    <td><a href="assignment4.html" class="btn btn-success btn-xs">A4 (PageRank): Oct 25</a></td>
+    <td>Feb 28, Mar 5, 7, 12</td>
+    <td><a href="assignment4-451.html" class="btn btn-success btn-xs">A4: Feb 28</a></td>
+    <td></td>
   </tr>
 
   <tr>
     <td>7</td><td><a href="#part07">Mutable State</a></td>
-    <td>Nov 8, 13</td>
-    <td><a href="assignment5.html" class="btn btn-success btn-xs">A5 (SQL): Nov 8</a></td>
+    <td>Mar 14, 19</td>
+    <td><a href="assignment5-451.html" class="btn btn-success btn-xs">A5: Mar 14</a></td>
+    <td><a href="assignment4-431.html" class="btn btn-info btn-xs">A4: Mar 14</a></td>
   </tr>
+
 
   <tr>
     <td>8</td>
     <td><a href="#part08">Analyzing Graphs, Redux</a></td>
-    <td>Nov 15, 20</td>
+    <td>Mar 21, 26</td>
+    <td></td>
     <td></td>
   </tr>
 
   <tr>
     <td>9</td>
     <td><a href="#part09">Real-Time Analytics</a></td>
-    <td>Nov 22, 27</td>
-    <td><a href="assignment6.html" class="btn btn-success btn-xs">A6 (ML): Nov 22</a></td>
+    <td>Mar 28, Apr 2</td>
+    <td><a href="assignment6-451.html" class="btn btn-success btn-xs">A6: Mar 28</a></td>
+    <td><a href="assignment5-431.html" class="btn btn-info btn-xs">A5: Apr 2</a></td>
   </tr>
 
   <tr>
     <td>10</td>
     <td><a href="#part10">Looking Ahead</a></td>
-    <td>Nov 29</td>
-    <td><a href="assignment7.html" class="btn btn-success btn-xs">A7 (Streaming): Nov 29</a></td>
+    <td>Apr 4</td>
+    <td><a href="assignment7-451.html" class="btn btn-success btn-xs">A7: Apr 4</a></td>
+    <td></td>
   </tr>
+
 
 
 </tbody>
@@ -157,7 +169,7 @@
 </section>
 
 <section id="part01" style="padding-top:35px"><div>
-<h3>Part 1: MapReduce Algorithm Design <small>Sep 6, 11, 13, 18</small></h3>
+<h3>Part 1: MapReduce Algorithm Design <small>Jan 8, 10, 15, 17</small></h3>
 
 <h4>Topics</h4>
 
@@ -242,7 +254,7 @@
 
 
 <section id="part02" style="padding-top:35px"><div>
-<h3>Part 2: From MapReduce to Spark <small>Sep 20, 25</small></h3>
+<h3>Part 2: From MapReduce to Spark <small>Jan 22, 24</small></h3>
 
 <h4>Topics</h4>
 
@@ -302,7 +314,7 @@ that gathers everything together.</p>
 
 
 <section id="part03" style="padding-top:35px"><div>
-<h3>Part 3: Analyzing Text <small>Sep 27, Oct 2</small></h3>
+<h3>Part 3: Analyzing Text <small>Jan 29, 31</small></h3>
 
 
 <h4>Topics</h4>
@@ -342,7 +354,7 @@ that gathers everything together.</p>
 
 
 <section id="part04" style="padding-top:35px"><div>
-<h3>Part 4: Analyzing Graphs <small>Oct 4, 11</small></h3>
+<h3>Part 4: Analyzing Graphs <small>Feb 5, 7</small></h3>
 
 <h4>Topics</h4>
 
@@ -383,7 +395,7 @@ that gathers everything together.</p>
 
 
 <section id="part05" style="padding-top:35px"><div>
-<h3>Part 5: Analyzing Relational Data <small>Oct 16, 18, 23</small></h3>
+<h3>Part 5: Analyzing Relational Data <small>Feb 12, 14, 26</small></h3>
 
 <h4>Topics</h4>
 
@@ -432,7 +444,7 @@ that gathers everything together.</p>
 
 
 <section id="part06" style="padding-top:35px"><div>
-<h3>Part 6: Data Mining and Machine Learning <small>Oct 25, 30, Nov 1, 6</small></h3>
+<h3>Part 6: Data Mining and Machine Learning <small>Feb 28, Mar 5, 7, 12</small></h3>
 
 <h4>Topics</h4>
 
@@ -490,7 +502,7 @@ that gathers everything together.</p>
 
 
 <section id="part07" style="padding-top:35px"><div>
-<h3>Part 7: Mutable State <small>Nov 8, 13</small></h3>
+<h3>Part 7: Mutable State <small>Mar 14, 19</small></h3>
 
 <h4>Topics</h4>
 
@@ -534,7 +546,7 @@ that gathers everything together.</p>
 
 
 <section id="part08" style="padding-top:35px"><div>
-<h3>Part 8: Analyzing Graphs, Redux <small>Nov 15, 20</small></h3>
+<h3>Part 8: Analyzing Graphs, Redux <small>Mar 21, 26</small></h3>
 
 <h4>Topics</h4>
 
@@ -573,7 +585,7 @@ that gathers everything together.</p>
 
 
 <section id="part09" style="padding-top:35px"><div>
-<h3>Part 9: Real-Time Analytics <small>Nov 22, 27</small></h3>
+<h3>Part 9: Real-Time Analytics <small>Mar 28, Apr 2</small></h3>
 
 <h4>Topics</h4>
 
@@ -619,7 +631,7 @@ that gathers everything together.</p>
 
 
 <section id="part10" style="padding-top:35px"><div>
-<h3>Part 10: Looking Ahead <small>Nov 29</small></h3>
+<h3>Part 10: Looking Ahead <small>Apr 4</small></h3>
 
 <p style="padding-top: 5px"></p>
 
