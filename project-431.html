@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Course homepage for CS 451/651 431/631 Data-Intensive Distributed Computing (Winter 2018) at the University of Waterloo">
+    <meta name="author" content="Jimmy Lin">
+    <title>Data-Intensive Distributed Computing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="organization.html">Organization</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li class="active"><a href="assignments.html">Assignments</a></li>
+            <li><a href="software.html">Software</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+  <div class="page-header">
+    <div style="float: right"><img width="250" src="images/waterloo_logo.png" alt="University of Waterloo logo"/></div>
+    <h1>Assignments <br/><small>Data-Intensive Distributed Computing (Winter 2018)</small></h1>
+  </div>
+
+<p>Note that there separate sets of assignments for CS 451/651 and CS
+431/631. Make sure you work on the correct assignments!</p>
+
+<p><a href="assignments-431.html" class="btn btn-info btn-large">CS 431/631 Assignments</a></p>
+
+  <div class="subnav">
+    <ul class="nav nav-pills">
+      <li><a href="assignment0-431.html">0</a></li>
+      <li><a href="assignment1-431.html">1</a></li>
+      <li><a href="assignment2-431.html">2</a></li>
+      <li><a href="assignment3-431.html">3</a></li>
+      <li><a href="assignment4-431.html">4</a></li>
+      <li><a href="assignment5-431.html">5</a></li>
+      <li><a href="project-431.html">Final Project</a></li>
+    </ul>
+  </div>
+
+<h3>Final Project</h3>
+
+<p>The final project is a requirement only for graduate students taking CS 631.</p>
+
+<p>The topic of the final project can be on anything you wish in the
+space of big data. Anything reasonably related to topics that are
+covered in the course is within scope. For reference, there are four
+types of projects you might consider:</p>
+
+<ul>
+
+  <li>Learn additional capabilities (e.g., visualization) of Python
+    and Jupyter, and use them to build an interactive notebook for visualizing
+    or exploring a dataset of your choosing.   Your interactive
+    notebook should interact with Spark, so that it will be capable
+    of supporting exploration of data sets that are too large to fit
+    in the memory of a single machine.</li>
+
+  <li>Implement a big data algorithm in Spark: choose a
+  particular big data algorithm (for processing text, graphs,
+  relational data, etc.) and implement it. Ideally, the implementation
+  does not already exist in a library or open-source package. Since we
+  want you to implement the algorithm from scratch, it might perhaps
+  be too tempting to simply copy existing
+  code&mdash;see <a href="organization.html">notes on academic
+  integrity</a>.</li>
+
+  <li>Learn and explore a (new) big data processing framework:
+  although we discussed a variety of processing frameworks in class,
+  the assignments focused on Spark. Here's your chance
+  to learn a new processing framework, e.g., Spark Streaming, GraphX,
+  Giraph, Flink, etc. The project would involve learning to use the
+  processing framework and doing something interesting with it. The
+  "something interesting" might be a data mining algorithm, although
+  the expectations would be lower than building something in
+  Spark, since learning the new framework would form an
+  essential component of the project.</li>
+
+  <li>Perform some interesting data science. Is there a particular
+  dataset you'd like to explore or analyze? Your project could involve
+  performing interesting analytics on a dataset&mdash;here, the focus
+  would be the analytical product and the insights gleaned, as opposed
+  to the raw algorithms themselves. However, a superficial analysis
+    with existing machine-learning libraries is not enough.</li>
+
+</ul>
+
+<p>You may work in groups of up to three, or you can also work by
+yourself if you wish. The amount of effort devoted to the project
+  should be proportional to the number of people in the team.  As a
+  guideline, the level of effort should be comparable to 
+  two assignments per person.</p>
+
+<p>When you are ready, send me  <code>(ken.salem@uwaterloo.ca)</code>
+an email describing what you'd like to work on. I will provide you
+  with feedback on appropriateness and scope of your proposed project.
+  The "soft" deadline for this
+proposal is March 15, 2018.   There is no
+penalty if you miss this deadline, but it is in your best
+interest to not leave this proposal to the last minute.</p>
+
+<p>The deliverable for the final project is a report. Use
+the <a href="http://www.acm.org/publications/proceedings-template">ACM
+    Templates</a>.   The contents of the report will vary depending
+  on the type of project you are doing.   However, it should certainly
+  describe the goal of you project (what is your learning objective,
+  or what problem are you trying to solve), your methodology, and some
+  kind of evaluation of your results or progress.
+<strong>Your project proposal should explicitly describe how your
+  project report (see below) will be organized:  indicate what sections the report
+  will have, and what you expect to present in each section.</strong>
+There are no hard limits on the length of your final report, but you
+should target something in the range of 5-10 pages.
+
+<p>The (hard) deadline for submission of your project report is 1pm on
+  Monday April 23, 2018.   Please submit your project report using
+  <a href="https://marmoset.student.cs.uwaterloo.ca/"
+  target="_blank">Marmoset</a>, preferably in PDF format.   If you have
+  more than one file to submit, you may upload a zip file.
+
+  <h3>Evaluation</h3>
+
+<p>Your final project will be evaluated according to the following
+  criteria, with roughly equal weight placed on each one.
+  <ul>
+    <li><strong>Scope/Relevance:</strong>Is the objective clear? Is
+    the project course-related and substantial enough?</li>
+    <li><strong>Methodology:</strong>Is the methodology appropriate
+    and clearly described?</li>
+    <li><strong>Evaluation:</strong>Did you evaluate your work?  Did
+    you achieve your objective?  If not, did you explain why not?</li>
+    <li><strong>Presentation:</strong>Is your report well organized
+    and clearly written?</li>
+  </ul>
+  Your report should clearly indicate where you obtained any data that
+  you used in your project.   Include a link to the data if possible.
+</p>
+
+<p style="padding-top: 20px"><a href="#">Back to top</a></p>
+
+<div style="padding-bottom: 100px"></div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>
