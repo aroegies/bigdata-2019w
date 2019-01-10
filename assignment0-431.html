@@ -85,15 +85,31 @@
   <h3>Assignment 0: Warmup <small>due 2:30pm January 22</small></h3>
 
   <p>This assignment is a warmup exercise to get you familar with
-  the some of the basic tools you will need for the remaining
+  some of the basic tools you will need for the remaining
   assignments.   In particular, we will be making use of
   Python (for programming) and Jupyter notebooks.</p>
 
 <p>The general setup is as follows:  for each assignment, you will
   be provided with a "starter" notebook, which will describe what
   needs to be done for that assignment.   You'll complete the
-  assignment in the notebook, and then submit your notebook to the
-  course staff for marking.</p>
+  assignment in the notebook, and then submit your notebook to a 
+private GitHub repo. Shortly after the assignment deadline, we'll 
+pull your repo for marking.</p>
+
+<p>I'm assuming you already have
+a <a href="http://github.com/">GitHub</a> account. If not, create one
+as soon as possible. Once you've signed up for an account, go and
+<a href="https://education.github.com/discount_requests/new">request
+an educational account</a>. This will allow you to create private
+repos for free. Please do this as soon as possible since there may be
+delays in the request verification process.</p>
+
+<p>Create a <b>private</b> repo called <code>bigdata2019w</code>. I'm
+assuming that you're already familiar GitHub, but just in
+case, here is <a href="https://help.github.com/articles/create-a-repo">how
+you create a repo on GitHub</a>. If you've successfully gotten an
+educational account (per above), you should be able to create private
+repos for free.</p>
 
 <h4 style="padding-top: 10px">Python and Jupyter</h4>
 
@@ -146,7 +162,7 @@
 <p>A Jupyter "hub" is a place to store and use Jupyter notebooks.
   For the CS431/631 assignments, you'll be using a hub operated by
   the School of Computer Science.  To get started,
-  go to <a href="jupyter.student.cs.uwaterloo.ca"
+  go to <a href="https://jupyter.student.cs.uwaterloo.ca:8000"
 	   target="_blank">jupyter.student.cs.uwaterloo.ca</a>.
   Log in using your userid and password for the <emph>CS student computing
     environment</emph> (not your WatIAM password).
@@ -169,7 +185,7 @@
 <p>
   It is a good idea to create
   a new folder to hold all of your work for this course, if you do
-  not already have one.   To this, use the <samp>New</samp> dropdown on the
+  not already have one.   To do this, use the <samp>New</samp> dropdown on the
   top right to create a new folder, and call the folder <samp>cs431</samp>
   (or whatever name you prefer).   Then, open your new folder by
   clicking on it.
@@ -180,7 +196,7 @@
   Jupyter notebook.
 To create a notebook, use the <samp>New</samp> dropdown to
 create a new Python 3 notebook.
-You should see something that looks like this,
+You should see something that looks like this:
 <div style="padding-top: 20px; padding-left: 20px; padding-bottom:
 	    20px"><img width="800px" src="images/newnotebook.png"
 	    alt="A New Jupyter Notebook"/></div>
@@ -216,7 +232,7 @@ menu of a running notebook.</p>
     <li>Download the starter notebook for the assignment, as well as any
       other required files, from the assignment web page to your computer.</li>
     <li>Use a web browser to log in to the CS Jupyter
-      hub at  <a href="jupyter.student.cs.uwaterloo.ca"
+      hub at  <a href="https://jupyter.student.cs.uwaterloo.ca:8000"
 	   target="_blank">jupyter.student.cs.uwaterloo.ca</a>.
     <li>Upload the starter notebook for the assignment, as well as any
       other required files, from your computer to the CS hub, into
@@ -234,7 +250,7 @@ menu of a running notebook.</p>
 <h4 style="padding-top: 10px">Assignment 0</h4>
 
 For the first assignment, you will do some simple analyses on the
-on the text of Shakespeare's plays.
+text of Shakespeare's plays.
 For this assignment, you will need to download three files to your
 local machine, and then upload them to the Jupyter hub.
 They are:
@@ -250,7 +266,7 @@ They are:
 Files with names that end in <samp>.ipynb</samp> are Python notebook
 files.   When you work in a notebook and save your work, your work
 is saved in the <samp>.ipynb</samp> file.   You'll submit
-your saved <samp>A0.ipynb</samp> file to the course staff when you are done with
+your saved <samp>A0.ipynb</samp> file to your github repository when you are done with
 the assignment.   That will allow us to open your notebook and review
 your work.
 
@@ -262,18 +278,19 @@ we expect you to do.
 <h4 style="padding-top: 10px">Submitting Assignment 0</h4>
 
 <p>
-To submit A0, use the following steps:
+Once you are done with the assignment, submit A0 using the following steps:
 <ol>
 <li>Download your <samp>A0.ipynb</samp> file from the Jupyter hub to your
   computer.</li>
-<li>Change the name of your file from <samp>A0.ipynb</samp>
-  to <samp>A0-xxxxxxxx.ipynb</samp>, where <samp>xxxxxxxx</samp> is your UW
-  student ID number.</li>
-<li>Send your <samp>A0-xxxxxxxx.ipynb</samp> file as an e-mail attachment to
-  <a href="mailto:uwaterloo-bigdata-2019w-staff@googlegroups.com?subject=[cs431]%20A0-xxxxxxxx">uwaterloo-bigdata-2019w-staff@googlegroups.com</a>.  Your
-  e-mail message must be sent before the assignment deadline, and must
-  have the subject line <samp>[cs431] A0-xxxxxxxx</samp>,
-  where <samp>xxxxxxxx</samp> is your UW student ID number.</li>
+<li>Submit your <samp>A0.ipynb</samp> file to your GitHub repository using the web interface. 
+  If you're not already familiar with GitHub, here is <a href="https://help.github.com/articles/adding-a-file-to-a-repository/">how
+you submit a new file to a repo on GitHub</a>. Make sure your <samp>A0.ipynb</samp> file is committed to the master branch. Your assignment should be viewable in the web interface.</li>
+<li>Add the
+user <a href="https://github.com/bigdatateach">bigdatateach</a> a
+collaborator to your repo so that we can access it. Here is <a href="https://help.github.com/articles/inviting-collaborators-to-a-personal-repository/">how
+you add a collaborator to your repo</a>.</li>
+<li>Finally, you need to tell us your GitHub account so we can link it
+to you. Submit your information <a href="https://goo.gl/forms/BVdXDGIXxWOuhUze2">here</a>.</li>
 </ol>
 
 <p style="padding-top: 20px"><a href="#">Back to top</a></p>
