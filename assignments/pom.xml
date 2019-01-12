@@ -8,8 +8,8 @@
   <packaging>jar</packaging>
   <name>assignments</name>
   <version>1.0</version>
-  <description>Assignments for CS 451 Data-Intensive Distributed Computing (Fall 2018) at the University of Waterloo</description>
-  <url>https://lintool.github.io/bigdata-2018f/</url>
+  <description>Assignments for CS 451 Data-Intensive Distributed Computing (Winter 2019) at the University of Waterloo</description>
+  <url>https://roegiest.com/bigdata-2019w/</url>
 
   <repositories>
     <repository>

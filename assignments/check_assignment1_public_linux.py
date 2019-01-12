@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-CS 451 Data-Intensive Distributed Computing (Fall 2018):
+CS 451 Data-Intensive Distributed Computing (Winter 2019):
 Assignment 1 public check script for the Linux Student CS environment
 
 Sample usage:

@@ -304,7 +304,7 @@ excuse if your assignment is late.</p>
 <ul>
 
 <li>Similar to assignment 0, the answers to the questions go
-in <code>bigdata2018f/assignment1.md</code>.</li>
+in <code>bigdata2019w/assignment1.md</code>.</li>
 
 <li>The pairs and stripes implementation should be in
 package <code>ca.uwaterloo.cs451.a1</code>.</li>
@@ -325,11 +325,11 @@ follows (we will make sure the collection is there):</p>
 
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a1.PairsPMI \
-   -input data/Shakespeare.txt -output cs451-lintool-a1-shakespeare-pairs \
+   -input data/Shakespeare.txt -output cs451-bigdatateach-a1-shakespeare-pairs \
    -reducers 5 -threshold 10
 
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a1.StripesPMI \
-   -input data/Shakespeare.txt -output cs451-lintool-a1-shakespeare-stripes \
+   -input data/Shakespeare.txt -output cs451-bigdatateach-a1-shakespeare-stripes \
    -reducers 5 -threshold 10
 </pre>
 
@@ -343,9 +343,9 @@ accepted as an excuse if we can't get your code to run.</p>
 with something like:</p>
 
 <pre>
-$ wget http://lintool.github.io/bigdata-2018f/assignments/check_assignment1_public_linux.py
+$ wget http://roegiest.com/bigdata-2019w/assignments/check_assignment1_public_linux.py
 $ chmod +x check_assignment1_public_linux.py
-$ ./check_assignment1_public_linux.py lintool
+$ ./check_assignment1_public_linux.py bigdatateach
 </pre>
 
 <p>We're going to run your code on the Datasci cluster as
@@ -353,11 +353,11 @@ follows:</p>
 
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a1.PairsPMI \
-   -input /data/cs451/simplewiki-20180901-sentences.txt -output cs451-lintool-a1-wiki-pairs \
+   -input /data/cs451/simplewiki-20180901-sentences.txt -output cs451-bigdatateach-a1-wiki-pairs \
    -reducers 5 -threshold 50
 
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a1.StripesPMI \
-   -input /data/cs451/simplewiki-20180901-sentences.txt -output cs451-lintool-a1-wiki-stripes \
+   -input /data/cs451/simplewiki-20180901-sentences.txt -output cs451-bigdatateach-a1-wiki-stripes \
    -reducers 5 -threshold 50
 </pre>
 
@@ -366,9 +366,9 @@ $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a1.StripesPMI \
 with something like:</p>
 
 <pre>
-$ wget http://lintool.github.io/bigdata-2018f/assignments/check_assignment1_public_datasci.py
+$ wget http://roegiest.com/bigdata-2019w/assignments/check_assignment1_public_datasci.py
 $ chmod +x check_assignment1_public_datasci.py
-$ ./check_assignment1_public_datasci.py lintool
+$ ./check_assignment1_public_datasci.py bigdatateach
 </pre>
 
 <p><b>Important:</b> Make sure that your code accepts the command-line
@@ -399,7 +399,7 @@ committed and pushed to origin before the deadline.</p>
 
   <li>Counters may be useful for... well, counting.</li>
 
-  <li>My <a href="https://github.com/lintool/tools/tree/master/lintools-datatypes/">lintools-datatypes
+  <li>Jimmy Lin's <a href="https://github.com/lintool/tools/tree/master/lintools-datatypes/">lintools-datatypes
   package</a> has <code>Writable</code> datatypes that you might find
   useful. (Feel free to use, but assignment can be completed
   without it.)</li>
