@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
-CS 451 Data-Intensive Distributed Computing (Fall 2018):
+CS 451 Data-Intensive Distributed Computing (Winter 2019):
 Assignment 3 public check script for the Datasci cluster
 
 Sample usage:
-$ ./check_assignment3_public_datasci.py lintool
+$ ./check_assignment3_public_datasci.py bigdatateach
 """
 
 import sys, os, signal, argparse

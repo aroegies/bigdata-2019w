@@ -164,7 +164,7 @@ marking):</p>
 
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BuildInvertedIndexCompressed \
-   -input data/Shakespeare.txt -output cs451-lintool-a3-index-shakespeare -reducers 4
+   -input data/Shakespeare.txt -output cs451-bigdatateach-a3-index-shakespeare -reducers 4
 </pre>
 
 <p>We should be able to control the number of partitions (#3 above)
@@ -177,11 +177,11 @@ as <code>BooleanRetrieval</code> in <a href="http://bespin.io/">Bespin</a>):</p>
 
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BooleanRetrievalCompressed \
-   -index cs451-lintool-a3-index-shakespeare -collection data/Shakespeare.txt \
+   -index cs451-bigdatateach-a3-index-shakespeare -collection data/Shakespeare.txt \
    -query "outrageous fortune AND"
 
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BooleanRetrievalCompressed \
-   -index cs451-lintool-a3-index-shakespeare -collection data/Shakespeare.txt \
+   -index cs451-bigdatateach-a3-index-shakespeare -collection data/Shakespeare.txt \
    -query "white red OR rose AND pluck AND"
 </pre>
 
@@ -204,7 +204,7 @@ on HDFS:</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BuildInvertedIndexCompressed \
    -input /data/cs451/enwiki-20180901-sentences-0.1sample.txt \
-   -output cs451-lintool-a3-index-wiki -reducers 4
+   -output cs451-bigdatateach-a3-index-wiki -reducers 4
 </pre>
 
 <p>The Wikipedia sample contains a sentence on each line, so each
@@ -216,12 +216,12 @@ article title and the sentence id, e.g., "Anarchism.0004" is sentence
 
 <pre>
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BooleanRetrievalCompressed \
-   -index cs451-lintool-a3-index-wiki \
+   -index cs451-bigdatateach-a3-index-wiki \
    -collection /data/cs451/enwiki-20180901-sentences-0.1sample.txt \
    -query "waterloo stanford OR cheriton AND"
 
 $ hadoop jar target/assignments-1.0.jar ca.uwaterloo.cs451.a3.BooleanRetrievalCompressed \
-   -index cs451-lintool-a3-index-wiki \
+   -index cs451-bigdatateach-a3-index-wiki \
    -collection /data/cs451/enwiki-20180901-sentences-0.1sample.txt \
    -query "big data AND hadoop spark OR AND"
 </pre>
