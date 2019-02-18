@@ -152,7 +152,7 @@ invocations specified below.</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.BuildPersonalizedPageRankRecords \
-   -input data/p2p-Gnutella08-adj.txt -output cs451-lintool-a4-Gnutella-PageRankRecords \
+   -input data/p2p-Gnutella08-adj.txt -output cs451-bigdatateach-a4-Gnutella-PageRankRecords \
    -numNodes 6301 -sources 367,249,145
 </pre>
 
@@ -175,12 +175,12 @@ source string.</p>
 iterate:</p>
 
 <pre>
-$ hadoop fs -mkdir cs451-lintool-a4-Gnutella-PageRank
+$ hadoop fs -mkdir cs451-bigdatateach-a4-Gnutella-PageRank
 
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.PartitionGraph \
-   -input cs451-lintool-a4-Gnutella-PageRankRecords \
-   -output cs451-lintool-a4-Gnutella-PageRank/iter0000 -numPartitions 5 -numNodes 6301
+   -input cs451-bigdatateach-a4-Gnutella-PageRankRecords \
+   -output cs451-bigdatateach-a4-Gnutella-PageRank/iter0000 -numPartitions 5 -numNodes 6301
 </pre>
 
 <p>After setting everything up, iterate multi-source personalized
@@ -189,7 +189,7 @@ PageRank:</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.RunPersonalizedPageRankBasic \
-   -base cs451-lintool-a4-Gnutella-PageRank -numNodes 6301 -start 0 -end 20 -sources 367,249,145
+   -base cs451-bigdatateach-a4-Gnutella-PageRank -numNodes 6301 -start 0 -end 20 -sources 367,249,145
 </pre>
 
 <p>Note that the sources are passed in from the command-line
@@ -201,7 +201,7 @@ values, with respect to each source.</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.ExtractTopPersonalizedPageRankNodes \
-   -input cs451-lintool-a4-Gnutella-PageRank/iter0020 -output cs451-lintool-a4-Gnutella-PageRank-top10 \
+   -input cs451-bigdatateach-a4-Gnutella-PageRank/iter0020 -output cs451-bigdatateach-a4-Gnutella-PageRank-top10 \
    -top 10 -sources 367,249,145
 </pre>
 
@@ -338,7 +338,7 @@ The graph has 14,099,242 vertices and 117,394,777 edges.</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.BuildPersonalizedPageRankRecords \
-   -input /data/cs451/enwiki-20180901-adj.txt -output cs451-lintool-a4-wiki-PageRankRecords \
+   -input /data/cs451/enwiki-20180901-adj.txt -output cs451-bigdatateach-a4-wiki-PageRankRecords \
    -numNodes 14099242 -sources 73273,73276
 </pre>
 
@@ -346,12 +346,12 @@ $ hadoop jar target/assignments-1.0.jar \
 iterate:</p>
 
 <pre>
-$ hadoop fs -mkdir cs451-lintool-a4-wiki-PageRank
+$ hadoop fs -mkdir cs451-bigdatateach-a4-wiki-PageRank
 
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.PartitionGraph \
-   -input cs451-lintool-a4-wiki-PageRankRecords \
-   -output cs451-lintool-a4-wiki-PageRank/iter0000 -numPartitions 10 -numNodes 14099242
+   -input cs451-bigdatateach-a4-wiki-PageRankRecords \
+   -output cs451-bigdatateach-a4-wiki-PageRank/iter0000 -numPartitions 10 -numNodes 14099242
 </pre>
 
 <p>After setting everything up, iterate multi-source
@@ -360,7 +360,7 @@ personalized PageRank:</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.RunPersonalizedPageRankBasic \
-   -base cs451-lintool-a4-wiki-PageRank -numNodes 14099242 -start 0 -end 20 -sources 73273,73276
+   -base cs451-bigdatateach-a4-wiki-PageRank -numNodes 14099242 -start 0 -end 20 -sources 73273,73276
 </pre>
 
 <p>On the Datasci cluster, each iteration shouldn't take more than a
@@ -373,7 +373,7 @@ values, with respect to each source.</p>
 <pre>
 $ hadoop jar target/assignments-1.0.jar \
    ca.uwaterloo.cs451.a4.ExtractTopPersonalizedPageRankNodes \
-   -input cs451-lintool-a4-wiki-PageRank/iter0020 -output cs451-lintool-a4-wiki-PageRank-top10 \
+   -input cs451-bigdatateach-a4-wiki-PageRank/iter0020 -output cs451-bigdatateach-a4-wiki-PageRank-top10 \
    -top 10 -sources 73273,73276
 </pre>
 
@@ -394,7 +394,7 @@ articles that they correspond to. Do the results make sense?</p>
 <ul>
 
 <li>Similar to the previous assignments, you'll create a file
-called <code>bigdata2018f/assignment4.md</code> (more below).</li>
+called <code>bigdata2019w/assignment4.md</code> (more below).</li>
 
 <li>All the implementations described above should be in
 package <code>ca.uwaterloo.cs451.a4</code>.</li>
@@ -405,7 +405,7 @@ package <code>ca.uwaterloo.cs451.a4</code>.</li>
 environment on the Gnutella graph and on the Wikipedia graph on the
 Datasci cluster.</p>
 
-<p>In <code>bigdata2018f/assignment4.md</code>, tell us if you were
+<p>In <code>bigdata2019w/assignment4.md</code>, tell us if you were
 able to successfully complete the assignment. This is in case we can't
 get your code to run, we need to know if it is because you weren't able
 to complete the assignment successfully, or if it is due to some other
