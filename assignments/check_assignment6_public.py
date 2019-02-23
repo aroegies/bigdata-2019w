@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
-CS 451 Data-Intensive Distributed Computing (Fall 2018):
+CS 451 Data-Intensive Distributed Computing (Winter 2019):
 Assignment 6 public check script
 
 Sample usage:
-$ ./check_assignment6_public.py lintool --env linux
+$ ./check_assignment6_public.py bigdatateach --env linux
 """
 
 import sys
@@ -120,7 +120,7 @@ def check_a6(pn,env,iterations,memory):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="CS 451 2018 Fall Assignment 6 Public Test Script")
+    parser = argparse.ArgumentParser(description="CS 451 2019 Winter Assignment 6 Public Test Script")
     parser.add_argument('username',metavar='Github Username', help="Github username",type=str)
     parser.add_argument('-m','--memory',help="Amount of memory to give Spark jobs",type=str,default="2G")
     parser.add_argument('-e', '--env', help='Environment to test under.',type=str,default='linux')

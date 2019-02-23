@@ -272,20 +272,20 @@ following manner:</p>
 
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifier \
- target/assignments-1.0.jar --input spam.train.group_x.txt --model cs451-lintool-a6-model-group_x
+ target/assignments-1.0.jar --input spam.train.group_x.txt --model cs451-bigdatateach-a6-model-group_x
 </pre>
 
 <p>The <code>--input</code> option specifies the input training
 instances (from above); the <code>--model</code> option specifies the
 output directory where the model goes. Inside the model
-directory <code>cs451-lintool-a6-model-group_x</code>, there
+directory <code>cs451-bigdatateach-a6-model-group_x</code>, there
 should be a single file, <code>part-00000</code>, that contains the
 trained model. The trained model should be a sequence of tuples, one
 on each line; each tuple should contain a feature and its weight (a
 double value). Something like:</p>
 
 <pre>
-$ head -5 cs451-lintool-a6-model-group_x/part-00000
+$ head -5 cs451-bigdatateach-a6-model-group_x/part-00000
 (547993,2.019484093190069E-4)
 (577107,5.255371091500805E-5)
 (12572,-4.40967560913553E-4)
@@ -305,7 +305,7 @@ document as spam; otherwise, classify the document as ham.</p>
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.ApplySpamClassifier \
  target/assignments-1.0.jar --input spam.test.qrels.txt \
- --output cs451-lintool-a6-test-group_x --model cs451-lintool-a6-model-group_x
+ --output cs451-bigdatateach-a6-test-group_x --model cs451-bigdatateach-a6-model-group_x
 </pre>
 
 <p>The <code>--input</code> option specifies the input test instances;
@@ -316,7 +316,7 @@ The output of <code>ApplySpamClassifier</code> should be organized as
 follows:</p>
 
 <pre>
-$ cat cs451-lintool-a6-test-group_x/* | sort | head -5
+$ cat cs451-bigdatateach-a6-test-group_x/* | sort | head -5
 (clueweb09-en0000-00-00142,spam,2.601624279252943,spam)
 (clueweb09-en0000-00-01005,ham,2.5654162439491004,spam)
 (clueweb09-en0000-00-01382,ham,2.5893946346394188,spam)
@@ -337,7 +337,7 @@ output is to facilitate evaluation (see below).</p>
 <p>Finally, you can evaluate your results:</p>
 
 <pre>
-$ ./spam_eval.sh cs451-lintool-a6-test-group_x
+$ ./spam_eval.sh cs451-bigdatateach-a6-test-group_x
 1-ROCA%: 17.25
 </pre>
 
@@ -352,7 +352,7 @@ able to replicate the above results.</p>
 
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifier \
- target/assignments-1.0.jar --input spam.train.group_y.txt --model cs451-lintool-a6-model-group_y
+ target/assignments-1.0.jar --input spam.train.group_y.txt --model cs451-bigdatateach-a6-model-group_y
 </pre>
 
 <p>And make predictions:</p>
@@ -360,13 +360,13 @@ spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifie
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.ApplySpamClassifier \
  target/assignments-1.0.jar --input spam.test.qrels.txt \
- --output cs451-lintool-a6-test-group_y --model cs451-lintool-a6-model-group_y
+ --output cs451-bigdatateach-a6-test-group_y --model cs451-bigdatateach-a6-model-group_y
 </pre>
 
 <p>And evaluate:</p>
 
 <pre>
-$ ./spam_eval.sh cs451-lintool-a6-test-group_y
+$ ./spam_eval.sh cs451-bigdatateach-a6-test-group_y
 1-ROCA%: 12.82
 </pre>
 
@@ -374,7 +374,7 @@ $ ./spam_eval.sh cs451-lintool-a6-test-group_y
 
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifier \
- target/assignments-1.0.jar --input spam.train.britney.txt --model cs451-lintool-a6-model-britney
+ target/assignments-1.0.jar --input spam.train.britney.txt --model cs451-bigdatateach-a6-model-britney
 </pre>
 
 <p>And make predictions:</p>
@@ -382,13 +382,13 @@ spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifie
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.ApplySpamClassifier \
  target/assignments-1.0.jar --input spam.test.qrels.txt \
- --output cs451-lintool-a6-test-britney --model cs451-lintool-a6-model-britney
+ --output cs451-bigdatateach-a6-test-britney --model cs451-bigdatateach-a6-model-britney
 </pre>
 
 <p>And evaluate:</p>
 
 <pre>
-$ ./spam_eval.sh cs451-lintool-a6-test-britney
+$ ./spam_eval.sh cs451-bigdatateach-a6-test-britney
 1-ROCA%: 15.96
 </pre>
 
@@ -406,10 +406,10 @@ the models from each of the individual classifiers into a common
 directory:</p>
 
 <pre>
-mkdir cs451-lintool-a6-model-fusion
-cp cs451-lintool-a6-model-group_x/part-00000 cs451-lintool-a6-model-fusion/part-00000
-cp cs451-lintool-a6-model-group_y/part-00000 cs451-lintool-a6-model-fusion/part-00001
-cp cs451-lintool-a6-model-britney/part-00000 cs451-lintool-a6-model-fusion/part-00002
+mkdir cs451-bigdatateach-a6-model-fusion
+cp cs451-bigdatateach-a6-model-group_x/part-00000 cs451-bigdatateach-a6-model-fusion/part-00000
+cp cs451-bigdatateach-a6-model-group_y/part-00000 cs451-bigdatateach-a6-model-fusion/part-00001
+cp cs451-bigdatateach-a6-model-britney/part-00000 cs451-bigdatateach-a6-model-fusion/part-00002
 </pre>
 
 <p>With these three separate classifiers, implement two different
@@ -432,7 +432,7 @@ will execute in the following manner:</p>
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.ApplyEnsembleSpamClassifier \
  target/assignments-1.0.jar --input spam.test.qrels.txt \
- --output cs451-lintool-a6-test-fusion-average --model cs451-lintool-a6-model-fusion --method average
+ --output cs451-bigdatateach-a6-test-fusion-average --model cs451-bigdatateach-a6-model-fusion --method average
 </pre>
 
 <p>The <code>--input</code> option specifies the input test instances.
@@ -484,7 +484,7 @@ trainer:</p>
 
 <pre>
 spark-submit --driver-memory 2g --class ca.uwaterloo.cs451.a6.TrainSpamClassifier \
- target/assignments-1.0.jar --input spam.train.britney.txt --model cs451-lintool-a6-model-britney-shuffle --shuffle
+ target/assignments-1.0.jar --input spam.train.britney.txt --model cs451-bigdatateach-a6-model-britney-shuffle --shuffle
 </pre>
 
 <p>You <i>must</i> shuffle the data using Spark. The way to accomplish
@@ -530,14 +530,14 @@ the <code>group_x</code> dataset on the Datasci cluster:</p>
 spark-submit --class ca.uwaterloo.cs451.a6.TrainSpamClassifier \
  --num-executors 2 --executor-cores 2 --executor-memory 8G \
  target/assignments-1.0.jar --input /data/cs451/spam.train.group_x.txt \
- --model cs451-lintool-a6-model-group_x
+ --model cs451-bigdatateach-a6-model-group_x
 
 spark-submit --class ca.uwaterloo.cs451.a6.ApplySpamClassifier \
  --num-executors 2 --executor-cores 2 --executor-memory 8G \
  target/assignments-1.0.jar --input /data/cs451/spam.test.qrels.txt \
- --output cs451-lintool-a6-test-group_x --model cs451-lintool-a6-model-group_x
+ --output cs451-bigdatateach-a6-test-group_x --model cs451-bigdatateach-a6-model-group_x
 
-./spam_eval_hdfs.sh cs451-lintool-a6-test-group_x
+./spam_eval_hdfs.sh cs451-bigdatateach-a6-test-group_x
 </pre>
 
 <p>The major differences are:</p>
@@ -583,7 +583,7 @@ ten trials and compute the overall average.</p>
 <ul>
 
 <li>Put the answers to all the questions above
-in <code>bigdata2018w/assignment6.md</code>.</li>
+in <code>bigdata2019w/assignment6.md</code>.</li>
 
 <li>Your implementations should go in
 package <code>ca.uwaterloo.cs451.a6</code>. At the minimum, you should have
