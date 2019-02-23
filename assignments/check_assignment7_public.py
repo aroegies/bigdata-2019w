@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-CS 451 Data-Intensive Distributed Computing (Fall 2018):
+CS 451 Data-Intensive Distributed Computing (Winter 2019):
 Assignment 7 public check script
 
 Sample usage:
@@ -38,7 +38,7 @@ def check_a7(username, memory):
          "--output", "output_{}/cs451-{}-output-q{}".format(3, username, 3)])
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description="CS 451 2018 Fall Assignment 7 Public Test Script")
+  parser = argparse.ArgumentParser(description="CS 451 2019 Winter Assignment 7 Public Test Script")
   parser.add_argument('username',metavar='Github Username', help="Github username",type=str)
   parser.add_argument('-m','--memory',help="Amount of memory to give Spark jobs",type=str,default="2G")
   args=parser.parse_args()
