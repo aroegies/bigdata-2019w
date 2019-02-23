@@ -1,10 +1,10 @@
 #!/usr/bin/python
 """
-CS 451 Data-Intensive Distributed Computing (Fall 2018):
+CS 451 Data-Intensive Distributed Computing (Winter 2019):
 Assignment 5 public check script for the Linux Student CS environment
 
 Sample usage:
-$ ./check_assignment5_public_linux.py lintool
+$ ./check_assignment5_public_linux.py bigdatateach
 """
 
 import sys
