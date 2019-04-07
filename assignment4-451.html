@@ -490,6 +490,37 @@ personalized PageRank correctly and it runs in both the Linux Student
 CS environment and the Datasci cluster, you will receive 25 out of 55
 points. And combinations thereof.</p>
 
+<h4 style="padding-top: 10px">Reference Running Times</h4>
+<p>To help you gauge the efficiency of your solution, we are giving you the running times of our reference implementations. 
+Keep in mind that these are machine dependent and can vary depending on the server/cluster load.</p>
+<table style="border: 1px solid black; width:60%;padding: 5px;">
+  <tr style="border: 1px solid black">
+    <th style="border: 1px solid black; text-align: center;">Class name</th>
+    <th style="border: 1px solid black; text-align: center;">Running time Linux</th>
+    <th style="border: 1px solid black; text-align: center;">Running time Datasci</th>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black; padding: 2px;">BuildPersonalizedPageRankRecords</td>
+    <td style="border: 1px solid black; padding: 2px">15 seconds</td>
+    <td style="border: 1px solid black; padding: 2px">1 minute 50 seconds</td>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black; padding: 2px">PartitionGraph</td>
+    <td style="border: 1px solid black; padding: 2px">15 seconds</td>
+    <td style="border: 1px solid black; padding: 2px">2 minutes 50 seconds</td>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black; padding: 2px">RunPersonalizedPageRankBasic</td>
+    <td style="border: 1px solid black; padding: 2px">75 seconds (20 iterations)</td>
+    <td style="border: 1px solid black; padding: 2px">35 minutes (20 iterations)</td>
+  </tr>
+  <tr style="border: 1px solid black">
+    <td style="border: 1px solid black; padding: 2px">ExtractTopPersonalizedPageRankNodes</td>
+    <td style="border: 1px solid black; padding: 2px">15 seconds</td>
+    <td style="border: 1px solid black; padding: 2px">45 seconds</td>
+  </tr>
+</table>
+
 
 <p style="padding-top: 20px"><a href="#">Back to top</a></p>
 
